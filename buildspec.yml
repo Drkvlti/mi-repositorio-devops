@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Instalando dependencias
+      - pip install -r app/requirements.txt
+
+  build:
+    commands:
+      - echo Construyendo aplicación (simulación Docker)
+
+  post_build:
+    commands:
+      - echo Build completado correctamente
